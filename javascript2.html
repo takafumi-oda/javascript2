@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>  <!-- jqueryで実装する場合 -->
+        <link rel="stylesheet" href="javascript2.css">
+        <title>電卓</title>
+    </head>
+
+    <body>
+      <div class = "container">
+        <form name = "calculate">
+          <input type="text" class = "result" name="result" value="0">
+          <div class = "line">
+            <input class = "button-view" type="button" value="7" onclick="input_number(7)">
+            <input class = "button-view" type="button" value="8" onclick="input_number(8)">
+            <input class = "button-view" type="button" value="9" onclick="input_number(9)">
+            <input class = "button-view" type="button" value="+" onclick="input_operator('+')">
+          </div>
+          <div class = "line">
+            <input class = "button-view" type="button" value="4" onclick="input_number(4)">
+            <input class = "button-view" type="button" value="5" onclick="input_number(5)">
+            <input class = "button-view" type="button" value="6" onclick="input_number(6)">
+            <input class = "button-view" type="button" value="-" onclick="input_operator('-')">
+          </div>
+          <div class = "line">
+            <input class = "button-view" type="button" value="1" onclick="input_number(1)">
+            <input class = "button-view" type="button" value="2" onclick="input_number(2)">
+            <input class = "button-view" type="button" value="3" onclick="input_number(3)">
+            <input class = "button-view" type="button" value="×" onclick="input_operator('*')">
+          </div>
+          <div class = "line">
+            <input class = "button-view" type="button" value="0" onclick="input_number(0)">
+            <input class = "button-view" type="button" value="00" onclick="input_number('00')">
+            <input class = "button-view" type="button" value="." onclick="input_number('.')">
+            <input class = "button-view" type="button" value="÷" onclick="input_operator('/')">
+          </div>
+          <div class = "line">
+            <input class = "wide-button-view" type="button" value="AC" onclick="input_clear()">
+            <input class = "wide-button-view" type="button" value="=" onclick="input_operator('=')">
+          </div>
+        </form>
+      
+      <script src="javascript2.js"></script>
+    </body>
+</html>
