@@ -19,7 +19,6 @@ function input_operator(symbol){
 		document.calculate.result.value = nowTotal;
 	}
 	if(symbol === "="){
-		nowTotal = 0;
 		operator = "+";
 	}else{
 		operator = symbol;
